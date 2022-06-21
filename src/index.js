@@ -11,7 +11,6 @@ $(document).ready(function () {
     const userTitle = $('#user-title').val();
     const userBody = $('#user-body').val();
     const entryOne = new Entry(userTitle, userBody);
-    console.log(entryOne);
 
     const wordCountOutput = entryOne.wordCount(entryOne.body);
     $('#word-count-output').text(wordCountOutput);
