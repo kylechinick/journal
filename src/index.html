@@ -8,5 +8,28 @@
   </head>
   <body>
     <h1>Test Journal</h1>
+    <form>
+      <label for="user-title">enter journal title</label>
+      <input id="user-title" name="user-title" type="text" />
+      <br />
+      <br />
+      <label for="user-body">journal entry</label>
+      <input id="user-body" name="user-body" type="text" />
+
+      <button type="submit">submit</button>
+    </form>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      explicabo sequi, voluptatem quo quasi provident. Esse ullam consequatur,
+      modi doloremque, asperiores expedita voluptate quia ipsam, eligendi
+      perferendis nesciunt ad similique.
+    </p>
+    <div id="user-entry-container">
+      <h2 id="user-title-output"></h2>
+      <p id="user-body-output"></p>
+      <p>Word count: <span id="word-count-output"></span></p>
+      <p>Vowel count: <span id="vowel-count-output"></span></p>
+      <p>consonants count: <span id="consonants-count-output"></span></p>
+    </div>
   </body>
 </html>
