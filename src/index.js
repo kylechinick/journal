@@ -21,5 +21,8 @@ $(document).ready(function () {
 
     const consonantsCountOutput = entryOne.consonantsCount(entryOne.body);
     $('#consonants-count-output').text(consonantsCountOutput);
+
+    const teaserSentenceOutput = entryOne.getTeaser(entryOne.body);
+    $('#teaser-sentence-output').text(teaserSentenceOutput);
   });
 });

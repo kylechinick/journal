@@ -66,12 +66,8 @@ Entry.prototype.consonantsCount = function (userString) {
 
 Entry.prototype.getTeaser = function (userString) {
   const stringArray = userString.split(' ');
-  let teaserArray = stringArray.slice(0, 8);
-  console.log(teaserArray);
-  // console.log(stringArray.slice(0, 8));
-  // return stringArray.slice(0, 8);
-  return teaserArray;
-  // return stringArray.filter(word => word !== '').length;
+  let teaserArray = stringArray.slice(0, 8).toString();
+  return teaserArray.replace(/,/g, ' ');
 };
 
 // Create a journaling website where a user can write entries including at least a title and body.
